@@ -1,0 +1,233 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: auto;
+}
+
+.account {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 72px;
+}
+
+.page_nav ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    background-color: #3a3a3a;
+}
+
+.page_nav ul li a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.page_nav ul li {
+    padding: 5px;
+    color: #ffffff;
+}
+
+/* Main */
+.spec {
+    position: relative;
+    bottom: 230px;
+    width: 250px;
+}
+
+.spec ul,
+.spec h3 {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 40px;
+    color: #4c96d7;
+}
+
+.own_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+main figure {
+    padding: 0px;
+    margin: 0px;
+}
+
+.more_info {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.upgrade {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 15px;
+}
+
+.upgrade_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.upgrade_item {
+    width: auto;
+    margin: 3px;
+    text-align: center;
+}
+
+.upgrade_item div {
+    background-color: #4c96d7;
+
+    height: 82px;
+    padding: 7px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.review li {
+    margin: 17px;
+}
+
+/* Form */
+/* Form  */
+form {
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  
+  form label {
+    display: inline-block;
+    margin: 5px;
+    width: -webkit-fill-available;
+  }
+  
+  form input {
+    font: 1em sans-serif;
+    margin: 5px;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 0.75em;
+  }
+  
+ 
+  input[type="radio"]{
+    width: auto;
+  }
+  
+  input:focus, 
+  textarea:focus {
+    border-color: #137491;
+  }
+  
+  .button {
+    padding-left: 90px; 
+    margin-left: .5em;
+  }
+  
+  input:invalid {
+      background-color: #fdd;
+      color: rgb(255, 0, 0);
+  }
+  input:valid {
+      background-color: #dfd;
+      color: rgb(0, 0, 0);
+  }
+
+  select {
+    width: -webkit-fill-available;
+  }
+
+.info{
+      font-size: x-small;
+  }
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border-top: solid;
+    border-top-width: 5px;
+
+    padding: 5px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+
+@media only screen and (min-width: 1040px) {
+    body {
+        background-image: url("/phpmotors/images/site/small_check.jpg");
+    }
+
+    .logo{
+        margin: inherit;
+    }
+
+    .wrapper {
+        background-color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        border-width: 5px;
+        border-style: solid;
+        border-color: #4c96d7;
+        border-radius: 0.5em;
+    }
+
+    .own_button {
+        position: relative;
+        margin-left: inherit;
+        bottom: 459px;
+        right: -38px;
+    }
+
+    .spec {
+        position: relative;
+        bottom: 470px;
+        width: 250px;
+    }
+
+    .more_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .upgrade_item {
+        width: 216px; 
+        margin: 3px;
+        text-align: center;
+    }
+
+
+}
